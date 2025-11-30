@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Music Player - Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mini Music Player</h1>
+    <nav>
+      <a href="index.html">Player</a>
+      <a href="library.html">Library</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section-title">Library (generated from array + remote fetch)</div>
+
+    <div style="margin-bottom:10px;">
+      <input id="filterInput" type="text" placeholder="Filter titles..." />
+      <button id="loadApi" class="secondary">Load more from API</button>
+      <small class="note">API load demonstrates async/await + try/catch</small>
+    </div>
+
+    <ul id="songList" class="song-list"></ul>
+
+    <div style="margin-top:12px;">
+      <div class="section-title">Stats</div>
+      <div id="stats"></div>
+    </div>
+  </div>
+
+  <script src="library.js"></script>
+</body>
+</html>
+
+

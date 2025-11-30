@@ -1,0 +1,110 @@
+/* style.css - very basic, clean styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #222;
+}
+
+header {
+  background: #1e1e2f;
+  color: #fff;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #cfd8ff;
+  margin-right: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.player-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #3f51b5;
+  color: #fff;
+}
+
+button.secondary {
+  background: #efefef;
+  color: #222;
+}
+
+.song-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.song-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 6px;
+  border-bottom: 1px solid #eee;
+}
+
+.song-item .meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-row {
+  margin-bottom: 12px;
+}
+
+small.note {
+  display: block;
+  margin-top: 6px;
+  color: #666;
+}
+
+.favorite {
+  background: transparent;
+  border: 1px solid #ddd;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.saved {
+  color: #0a7;
+  margin-left: 8px;
+  font-weight: 700;
+}

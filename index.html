@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Simple Music Player - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mini Music Player</h1>
+    <nav>
+      <a href="index.html">Player</a>
+      <a href="library.html">Library</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section-title">Now Playing</div>
+    <div id="nowPlaying">
+      <div id="songTitle">No song selected</div>
+      <div id="songArtist"></div>
+    </div>
+
+    <div class="player-controls">
+      <button id="prevBtn">Prev</button>
+      <button id="playBtn">Play</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="nextBtn">Next</button>
+      <button id="shuffleBtn" class="secondary">Shuffle</button>
+    </div>
+
+    <div style="margin-top:16px;">
+      <input id="searchInput" type="text" placeholder="Search songs..." />
+      <small class="note">Type to filter the list in Library (demonstrates input change event)</small>
+    </div>
+
+    <div style="margin-top:14px;">
+      <div class="section-title">Quick Playlist</div>
+      <ul id="quickPlaylist" class="song-list"></ul>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

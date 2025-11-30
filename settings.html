@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Music Player - Settings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mini Music Player</h1>
+    <nav>
+      <a href="index.html">Player</a>
+      <a href="library.html">Library</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section-title">User Settings & Feedback</div>
+
+    <form id="settingsForm">
+      <div class="form-row">
+        <label>Name (required)</label>
+        <input id="name" type="text" required />
+      </div>
+
+      <div class="form-row">
+        <label>Email (required)</label>
+        <input id="email" type="email" required />
+      </div>
+
+      <div class="form-row">
+        <label>Preferred Genre</label>
+        <input id="genre" type="text" placeholder="e.g., Pop, Classical" />
+      </div>
+
+      <div class="form-row">
+        <button type="submit">Save Settings</button>
+        <button type="button" id="clearBtn" class="secondary">Clear Saved</button>
+      </div>
+
+      <small class="note">Settings are stored in localStorage. Form validated before saving.</small>
+    </form>
+
+    <div style="margin-top:14px;">
+      <div class="section-title">Saved Settings</div>
+      <div id="saved"></div>
+    </div>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>
